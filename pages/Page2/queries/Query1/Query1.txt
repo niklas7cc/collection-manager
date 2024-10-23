@@ -1,0 +1,2 @@
+INSERT INTO public.language 
+VALUES ({{Input1.text}},{{Input2.text}});
