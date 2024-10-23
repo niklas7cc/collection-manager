@@ -1,6 +1,6 @@
 {
   "gitSyncId": "671233cd04f73a5962daf2ff_f6f3089a-748e-4ed2-9f59-6c74b5e3b6b7",
-  "id": "Page2_Query1",
+  "id": "Dashboard_Query1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -29,7 +29,7 @@
     ],
     "executeOnLoad": false,
     "name": "Query1",
-    "pageId": "Page2",
+    "pageId": "Dashboard",
     "userSetOnLoad": false
   }
 }
