@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "671233cd04f73a5962daf2ff_f6f3089a-748e-4ed2-9f59-6c74b5e3b6b7",
-  "id": "Dashboard_Query1",
+  "gitSyncId": "671233cd04f73a5962daf2ff_81cf5a4b-92f0-4fd0-98b9-bf4b8550eacf",
+  "id": "Dashboard_Total_record_public_language1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.language ('language_name')\nVALUES ({{Input2.text}});",
+      "body": "SELECT COUNT(*) from public.language where language_name ilike '%{{Table1.searchText}}%';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "Query1",
+    "executeOnLoad": true,
+    "name": "Total_record_public_language1",
     "pageId": "Dashboard",
     "userSetOnLoad": false
   }

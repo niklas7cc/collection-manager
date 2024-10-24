@@ -1,0 +1,1 @@
+UPDATE public.language SET "language_name"= '{{Table1.updatedRow.language_name}}' WHERE "language_id"= {{Table1.updatedRow.language_id}};

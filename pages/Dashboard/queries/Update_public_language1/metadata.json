@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "671233cd04f73a5962daf2ff_f6f3089a-748e-4ed2-9f59-6c74b5e3b6b7",
-  "id": "Dashboard_Query1",
+  "gitSyncId": "671233cd04f73a5962daf2ff_25fd1f81-b9f6-4ac1-9cbe-a67527bb5d96",
+  "id": "Dashboard_Update_public_language1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.language ('language_name')\nVALUES ({{Input2.text}});",
+      "body": "UPDATE public.language SET \"language_name\"= '{{Table1.updatedRow.language_name}}' WHERE \"language_id\"= {{Table1.updatedRow.language_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Query1",
+    "name": "Update_public_language1",
     "pageId": "Dashboard",
     "userSetOnLoad": false
   }
