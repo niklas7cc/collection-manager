@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Select_public_language1",
     "pageId": "Dashboard",
     "userSetOnLoad": false

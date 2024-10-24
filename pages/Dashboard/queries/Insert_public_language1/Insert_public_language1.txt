@@ -1,1 +1,1 @@
-INSERT INTO public.language ("language_name") VALUES ('{{(Table1.newRow || {}).language_name}}')
+INSERT INTO public.language ("language_name") VALUES ('{{Input2.text}}')

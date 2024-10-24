@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.language (\"language_name\") VALUES ('{{(Table1.newRow || {}).language_name}}')",
+      "body": "INSERT INTO public.language (\"language_name\") VALUES ('{{Input2.text}}')",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
