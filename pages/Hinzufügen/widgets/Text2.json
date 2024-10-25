@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
+  "bottomRow": 18,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -20,17 +20,17 @@
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "i2i4vgfxl8",
-  "leftColumn": 7,
+  "key": "wdr3kcww2j",
+  "leftColumn": 40,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 23,
-  "mobileLeftColumn": 9,
-  "mobileRightColumn": 25,
-  "mobileTopRow": 19,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 11,
   "needsErrorInfo": false,
-  "originalBottomRow": 24,
+  "originalBottomRow": 18,
   "originalTopRow": 11,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
@@ -38,15 +38,15 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 23,
+  "rightColumn": 56,
   "shouldTruncate": false,
-  "text": "neue pokemon hinzufügen\nneue sets hinzufügen\nneue sprache hinzufügen\nneue Seltenheit hinzufügen\nzustand ist fix\nneue Metadaten",
+  "text": "    expansion_name varchar(255),\n    release_date date,\n    expansion_max_number int,",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 11,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "hhrxao5yi9",
-  "widgetName": "Text1"
+  "widgetId": "r3kdvd56zk",
+  "widgetName": "Text2"
 }

@@ -1,0 +1,1 @@
+UPDATE public.expansion SET "expansion_name"= '{{Table1.updatedRow.expansion_name}}', "release_date"= '{{Table1.updatedRow.release_date}}', "expansion_max_number"= '{{Table1.updatedRow.expansion_max_number}}' WHERE "expansion_id"= {{Table1.updatedRow.expansion_id}};
