@@ -1,1 +1,0 @@
-INSERT INTO public.expansion ("expansion_name","release_date","expansion_max_number") VALUES ('{{(Table1.newRow || {}).expansion_name}}','{{(Table1.newRow || {}).release_date}}','{{(Table1.newRow || {}).expansion_max_number}}')

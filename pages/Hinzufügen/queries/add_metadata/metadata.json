@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "671233cd04f73a5962daf2ff_99deec88-f7d3-4368-b33b-99e9d09bafd1",
-  "id": "Hinzufügen_Total_record_public_expansion1",
+  "gitSyncId": "671233cd04f73a5962daf2ff_9f577fcc-b9c5-4052-b0fa-02a757775ac4",
+  "id": "Hinzufügen_add_metadata",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) from public.expansion;",
+      "body": "SELECT * FROM public.\"card\" LIMIT 10;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,13 +22,8 @@
       "name": "tcg_collection",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "executeOnLoad": false,
-    "name": "Total_record_public_expansion1",
+    "name": "add_metadata",
     "pageId": "Hinzufügen",
     "userSetOnLoad": false
   }

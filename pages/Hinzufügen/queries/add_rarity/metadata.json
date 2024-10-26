@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "671233cd04f73a5962daf2ff_0cdb69eb-7efd-42bc-83cc-68be63de6381",
-  "id": "Hinzufügen_Select_public_expansion1",
+  "gitSyncId": "671233cd04f73a5962daf2ff_e7315c75-93e5-446a-899c-1bedfb3034a8",
+  "id": "Hinzufügen_add_rarity",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  *\nFROM\n  public.expansion\nORDER BY\n  \"{{Table1.sortOrder.column || 'expansion_id'}}\" {{Table1.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"}}\nLIMIT\n  {{Table1.pageSize}}\nOFFSET\n  {{Table1.pageOffset}}",
+      "body": "SELECT * FROM public.\"card\" LIMIT 10;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,13 +22,8 @@
       "name": "tcg_collection",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "executeOnLoad": false,
-    "name": "Select_public_expansion1",
+    "name": "add_rarity",
     "pageId": "Hinzufügen",
     "userSetOnLoad": false
   }

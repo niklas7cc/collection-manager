@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "671233cd04f73a5962daf2ff_227a8f5f-e4b2-4147-9a90-b5c5477b8c82",
-  "id": "Hinzufügen_Update_public_expansion1",
+  "gitSyncId": "671233cd04f73a5962daf2ff_38418620-497a-46c9-a1b9-96cd87379d97",
+  "id": "Hinzufügen_add_expansion",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.expansion SET \"expansion_name\"= '{{Table1.updatedRow.expansion_name}}', \"release_date\"= '{{Table1.updatedRow.release_date}}', \"expansion_max_number\"= '{{Table1.updatedRow.expansion_max_number}}' WHERE \"expansion_id\"= {{Table1.updatedRow.expansion_id}};",
+      "body": "SELECT * FROM public.\"card\" LIMIT 10;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,13 +22,8 @@
       "name": "tcg_collection",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "executeOnLoad": false,
-    "name": "Update_public_expansion1",
+    "name": "add_expansion",
     "pageId": "Hinzufügen",
     "userSetOnLoad": false
   }
