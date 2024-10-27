@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.\"card\" LIMIT 10;",
+      "body": "INSERT INTO public.pokemon (\"pokemon_name\",\"pokedex_number\") VALUES ('{{Input_PokemonName.text}}', CAST({{Input_PokedexNo.text}} AS INTEGER));\n-- Use quotes for non-integer values",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,6 +22,11 @@
       "name": "tcg_collection",
       "pluginId": "postgres-plugin"
     },
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
     "name": "add_pokemon",
     "pageId": "Hinzufügen",

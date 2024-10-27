@@ -1,1 +1,1 @@
-SELECT * FROM public."card" LIMIT 10;
+INSERT INTO public.expansion ("expansion_name","release_date","expansion_max_number") VALUES ('{{Input_SetName.text}}','{{DatePicker_ReleaseDate.selectedDate}}','{{Input_NumberInSet.text}}')

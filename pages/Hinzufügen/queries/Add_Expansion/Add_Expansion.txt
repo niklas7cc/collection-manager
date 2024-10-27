@@ -1,1 +1,0 @@
-INSERT INTO public.expansion ("expansion_name","release_date","expansion_max_number") VALUES ('{{Input1.text}}','{{DatePicker1.selectedDate}}','{{Input2.text}}')

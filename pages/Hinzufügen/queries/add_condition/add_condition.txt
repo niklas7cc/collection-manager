@@ -1,1 +1,1 @@
-SELECT * FROM public."card" LIMIT 10;
+INSERT INTO public.condition ("condition_name") VALUES ('{{Input_Condition.text}}')

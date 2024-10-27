@@ -13,6 +13,11 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconName": "plus",
   "isDisabled": false,
   "isLoading": false,
@@ -25,6 +30,7 @@
   "mobileRightColumn": 52,
   "mobileTopRow": 51,
   "needsErrorInfo": false,
+  "onClick": "{{add_metadata.run()}}",
   "parentColumnSpace": 19.8125,
   "parentId": "7pxvhy54a1",
   "parentRowSpace": 10,

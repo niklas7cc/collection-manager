@@ -1,1 +1,1 @@
-SELECT * FROM public."card" LIMIT 10;
+INSERT INTO public.rarity ("rarity_name") VALUES ('{{Input_Rarity.text}}')

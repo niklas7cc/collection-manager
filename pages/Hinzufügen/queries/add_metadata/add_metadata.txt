@@ -1,1 +1,1 @@
-SELECT * FROM public."card" LIMIT 10;
+INSERT INTO public.metadata ("attribute") VALUES ('{{Input_MetaData.text}}')
